@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Oluwasegun Damilola Olaleye</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; }
+        .navbar { background-color: white; padding: 15px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); }
+        .navbar-nav .nav-link { font-weight: bold; color: black; padding: 8px 15px; }
+        .nav-link.active { color: blue !important; font-weight: bold; }
+        .portfolio-section { padding: 40px; background-color: white; margin: 20px; border-radius: 10px; }
+        .project { margin-bottom: 50px; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); }
+        .project img { width: 250px; height: auto; border-radius: 5px; margin-top: 10px; border: 1px solid #ddd; padding: 5px; }
+        .project-title { font-size: 1.4rem; font-weight: bold; text-align: center; color: #0056b3; }
+        .footer { background-color: #004080; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><b>OLUWASEGUN DAMILOLA OLALEYE</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="publications.html">PUBLICATIONS</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Portfolio Section -->
+<section class="portfolio-section container">
+    <h2 class="text-center">📊 Machine Learning and Predictive Modeling</h2>
+    
+    <div class="project">
+        <p class="project-title">Car Price Prediction Model</p>
+        <p>Developed machine learning models to forecast car prices based on brand, age, mileage, and market conditions.</p>
+        <div class="row">
+            <div class="col-md-4"><img src="images/Actual Prices vs Predicted Prices (car).png" alt="Car Price Prediction"></div>
+            <div class="col-md-4"><img src="images/Random Forest Regressor with all features.png" alt="Random Forest Model"></div>
+        </div>
+    </div>
+
+    <div class="project">
+        <p class="project-title">Road Accident Prediction</p>
+        <p>Created a machine learning model to predict road accidents and injuries using geo big data.</p>
+        <div class="row">
+            <div class="col-md-4"><img src="images/car accident prediction.png" alt="Road Accident Prediction"></div>
+        </div>
+    </div>
+
+    <h2 class="text-center">🌍 Geospatial Analysis</h2>
+
+    <div class="project">
+        <p class="project-title">Urban Commercial Activity in London</p>
+        <p>Analyzed geo big data to identify commercial activity and urban land use trends.</p>
+        <div class="row">
+            <div class="col-md-3"><img src="images/commercial buffers and transport points.png" alt="Commercial Buffers"></div>
+            <div class="col-md-3"><img src="images/Commercial POIs and Land Use Categories.png" alt="Land Use Categories"></div>
+        </div>
+    </div>
+
+    <h2 class="text-center">📝 Natural Language Processing</h2>
+
+    <div class="project">
+        <p class="project-title">Sentiment Analysis on Amazon Reviews</p>
+        <p>Developed an NLP model for sentiment classification of Amazon food product reviews.</p>
+        <div class="row">
+            <div class="col-md-4"><img src="images/sentiment_analysis.png" alt="Sentiment Analysis"></div>
+        </div>
+    </div>
+
+    <h2 class="text-center">🖼️ Computer Vision</h2>
+
+    <div class="project">
+        <p class="project-title">Disease Image Classification with CNN</p>
+        <p>Built a deep learning model to classify disease images using CNN and image processing techniques.</p>
+        <div class="row">
+            <div class="col-md-4"><img src="images/confusion_matrix_batch_size_128_stride_1_kernel_5 (flower).png" alt="CNN Confusion Matrix"></div>
+            <div class="col-md-4"><img src="images/Model_loss_batch_size_32_stride_1_kernel_5 (flower).png" alt="Model Loss Graph"></div>
+        </div>
+    </div>
+
+    <h2 class="text-center">📊 Data-Driven Policy & Development</h2>
+
+    <div class="project">
+        <p class="project-title">Census Data Analysis for Policy Decisions</p>
+        <p>Analyzed community census data to assist government agencies in policy-making.</p>
+        <div class="row">
+            <div class="col-md-4"><img src="images/Statistical View of Occupants.png" alt="Statistical View of Occupants"></div>
+            <div class="col-md-4"><img src="images/Distribution of Unemployed by Age and Gender.png" alt="Unemployment Distribution"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Oluwasegun Damilola Olaleye | Data Scientist</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let navLinks = document.querySelectorAll(".nav-link");
+        let currentPage = window.location.pathname.split("/").pop();
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

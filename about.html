@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Oluwasegun Damilola Olaleye</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; }
+        .navbar { background-color: white; padding: 15px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); }
+        .navbar-nav .nav-link { font-weight: bold; color: black; padding: 8px 15px; }
+        .nav-link.active { color: blue !important; font-weight: bold; }
+        .about-section { padding: 40px; background-color: white; margin: 20px; border-radius: 10px; }
+        .footer { background-color: #004080; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><b>OLUWASEGUN DAMILOLA OLALEYE</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="publications.html">PUBLICATIONS</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section class="about-section container">
+    <h2 class="text-center">👤 About Me</h2>
+    <p class="text-center"><em>"A data-driven problem solver passionate about leveraging data to drive strategic decisions and create tangible business impact."</em></p>
+
+    <p>
+        I am a highly motivated and results-oriented Data Scientist with a proven track record of collaborating with cross-functional teams 
+        to identify process improvement opportunities and implement data-driven solutions. My background spans diverse industries, 
+        including insurance and technology, providing me with a unique perspective on applying data science techniques to solve real-world challenges.
+    </p>
+
+    <h4>🔬 Areas of Interest</h4>
+    <ul>
+        <li><b>Applying AI and Machine Learning to Extract Insights:</b> I am eager to apply AI techniques (ML, NLP, Computer Vision) to Big Data to derive valuable insights.</li>
+        <li><b>Geo Big Data Analysis:</b> My master's dissertation focused on identifying dynamic urban functions using Geo Big Data, giving me specialized expertise in this area.</li>
+        <li><b>Data Visualization and Communication:</b> I am skilled at creating compelling dashboards and reports using tools like Power BI to communicate complex data findings to both technical and non-technical audiences.</li>
+        <li><b>Finance & Insurance: With over ten years of experience in the insurance sector, including ERP implementations at two different insurance companies, I possess a comprehensive understanding of insurance processes and operations.</li>
+    </ul>
+
+    <p>
+        Beyond my technical skills, I bring a collaborative and proactive approach to every project. 
+        I am committed to continuous learning and staying at the forefront of the rapidly evolving field of data science.
+    </p>
+
+    <h4>🔗 Connect with Me</h4>
+    <ul>
+        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/olaleye-oluwasegun/" target="_blank">Visit My Profile</a></li>
+        <li><b>Email:</b> <a href="mailto:segolaleye@gmail.com">segolaleye@gmail.com</a></li>
+    </ul>
+
+    <h4>🚀 My Journey to Data Science</h4>
+    <p>
+        My interest in data science started with my background in computer science and my experience in the insurance industry, 
+        where I saw firsthand the power of data to improve efficiency and customer satisfaction. 
+        This led me to pursue a Master's degree in Artificial Intelligence and Data Science at the University of Hull, 
+        where I honed my skills in machine learning, data mining, and AI techniques. 
+        I am now eager to apply these skills to make a meaningful impact in a data-driven organization.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Oluwasegun Damilola Olaleye | Data Scientist</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let navLinks = document.querySelectorAll(".nav-link");
+        let currentPage = window.location.pathname.split("/").pop();
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
